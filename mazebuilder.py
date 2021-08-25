@@ -1,7 +1,7 @@
 import random
 import numpy as np
 
-import algorithmic_complexity as ac
+import algorithmic_complexity.disjointset as ds
 
 def makeMaze(rows, cols: int):
     maze = np.zeros((rows*2 + 1, cols*2+1))
@@ -15,7 +15,7 @@ def makeMaze(rows, cols: int):
     walls.extend((i*cols+cols-1,(i+1)*cols+cols-1) for i in range(rows-1))
     walls.extend(((rows-1)*cols+j, (rows-1)*cols+j+1) for j in range(cols-1))
 
-    s = ac.DisjointSet(len(walls))
+    s = ds.DisjointSet(len(walls))
     random.shuffle(walls)
     while len(walls) > 0:
         e1, e2 = walls.pop()
