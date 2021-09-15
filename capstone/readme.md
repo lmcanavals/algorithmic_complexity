@@ -7,6 +7,8 @@
 El trabajo parcial consiste en resolver el problema de enrutamiento de vehículos
 o VRP, en su versión para múltiples puntos de distribución.
 
+[Video explicativo](https://youtu.be/OKMssWdC0I0)
+
 El objetivo es buscar un balance entre el tiempo y costo de entrega. Un ejemplo
 del problema es el caso de los supermercados, los cuales reciben pedidos por su
 aplicación web o móvil, luego deben planificar la distribución considerando
