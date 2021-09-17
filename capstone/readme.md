@@ -32,7 +32,10 @@ X, Y correspondiente a un punto en la ciudad.
 
 ### Entregas
 
-* Crear un repositorio en Github con el nombre clave indicado por el profesor.
+* Crear un repositorio en Github con el nombre todo en minúsculas con el código de la
+  sección, el item (tf, se usará el mismo para ambos trabajos TP y TF) y finalmente
+  los códigos de los estudiantes sin la **u**, por ejemplo:
+  `cc41_tf_202011111_202012222_202013333_201924444`
 * Elaborar un plan de actividades con responsables y fechas usando los Issues.
 * En la semana 7 deberá presentar lo siguente:
 	* Un dataset con las especificaciones dadas.
