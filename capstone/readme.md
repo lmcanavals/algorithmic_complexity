@@ -46,3 +46,18 @@ X, Y correspondiente a un punto en la ciudad.
 Todos los documentos y archivos deberán estar contenidos en el repositorio, los
 elementos escritos deben estar en formato Markdown.
 
+## Milestones e issues recomendados:
+
+* Milestone 1: Trabajo parcial (semana 7 sesión 2)
+  * Actualizar lista de integrantes.
+  * Preparar lista de posibles tareas para aprobación de profesor.
+  * Tarea 1
+  * Tarea 2
+  * ...
+  * Presentación
+* Milestone 2: Hito 1 TF (semana 9 sesión 2)
+* Milestone 3: Hito 2 TF (semana 11 sesión 2)
+* Milestone 4: Hito 3 TF (semana 13 sesión 2)
+* Milestone 5: Hito 4 TF (semana 14  sesión 2)
+* Milestone 6: Presentación TF (semana 15 sesión 2)
+
