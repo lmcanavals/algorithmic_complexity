@@ -49,12 +49,12 @@ elementos escritos deben estar en formato Markdown.
 ## Milestones e issues recomendados:
 
 * Milestone 1: Trabajo parcial (semana 7 sesión 2)
-  * Actualizar lista de integrantes.
+  * Actualizar lista de integrantes. (issue)
   * Preparar lista de posibles tareas para aprobación de profesor.
-  * Tarea 1
-  * Tarea 2
+  * Tarea 1 (issue)
+  * Tarea 2 (issue)
   * ...
-  * Presentación
+  * Presentación (issue)
 * Milestone 2: Hito 1 TF (semana 9 sesión 2)
 * Milestone 3: Hito 2 TF (semana 11 sesión 2)
 * Milestone 4: Hito 3 TF (semana 13 sesión 2)
