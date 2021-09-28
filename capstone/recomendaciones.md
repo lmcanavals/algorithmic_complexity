@@ -4,11 +4,17 @@
 
 * Trabajo parcial
   * Actualizar lista de integrantes. (issue)
-  * Preparar lista de posibles tareas para aprobación de profesor.
-  * Tarea 1 (issue)
-  * Tarea 2 (issue)
-  * ...
-  * Presentación (issue)
+  * Generar primera versión de almacenes.csv
+  * Generar primera versión de puntos_entrega.csv
+  * Generar descripción de datos de vehículos de entrega indicando según su criterio, calculo de costo.
+  * Definir espacio de búsqueda, estado inicial, posible estado final, transiciones.
+  * Definir algoritmo integrante 1 en alto nivel con posible análisis asintótico.
+  * Definir algoritmo integrante 3 en alto nivel con posible análisis asintótico.
+  * Definir algoritmo integrante 4 en alto nivel con posible análisis asintótico.
+  * Definir algoritmo integrante 5 en alto nivel con posible análisis asintótico.
+  * Definir algoritmo integrante 2 en alto nivel con posible análisis asintótico.
+  * Producir reporte de actividades.
+  * Incluir URL de video en youtube (u otro servicio) no listado (compartido por URL, privado) en el archivo README.md de un video elaborado de máximo 1 minuto explicando actividades realizadas.
 * Hito 1 TF
 * Hito 2 TF
 * Hito 3 TF
