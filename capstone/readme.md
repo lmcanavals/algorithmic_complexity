@@ -25,7 +25,7 @@ una distribución perfectamente rectangular, similar a la ciudad de Manhattan.
 * El dataset debe contener:
 	* Entre 50 y 100 puntos de distribución (almacenes).
 	* Entre 2500 y 5000 puntos de entrega.
-	* Una cantidad ilimitada de vehículos.
+	* Una cantidad ilimitada de vehículos en cada punto de distribución.
 	* Costo por tiempo y distancia por cada vehículo.
 * Cada punto de distribución y punto de entrega, está definido por una posición
 X, Y correspondiente a un punto en la ciudad.
