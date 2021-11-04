@@ -1,3 +1,10 @@
+def Digraph(n):
+  G = [[] for _ in range(n)]
+  return G
+
+def addDiEdge(G, u, v, w):
+  G[u].append((v, w))
+
 def bfs(G, s):
   n = len(G)
   visited = [False]*n
@@ -34,34 +41,45 @@ def dfs(G, s):
 
 def bellmanFord(G, s):
   n = len(G)
-  
+
   # initialize
-  dist = [float('inf')]*n
-  dist[s] = 0
+  cost = [float('inf')]*n
+  cost[s] = 0
   path = [-1]*n
 
-  # relax edges
+  # relax
   for _ in range(n-1):
     for u in range(n):
       for v, w in G[u]:
-        # relax edge (u, v)
-        f = dist[u] + w
-        if f < dist[v]:
-          dist[v] = f
+        if cost[u] + w < cost[v]:
+          cost[v] = cost[u] + w
           path[v] = u
 
-  # check for negative-weight cycles
+  # check negative cycle
   for u in range(n):
     for v, w in G[u]:
-      if dist[u] + w < dist[v]:
+      if cost[u] + w < cost[v]:
         return None, None
 
-  return path, dist
+  return path, cost
 
-def Digraph(n):
-  G = [[] for _ in range(n)]
-  return G
+def floydWarshall(G):
+  n = len(G)
+  cost = [[float('inf')]*n for _ in range(n)]
+  path = [[-1]*n for _ in range(n)]
 
-def addDiEdge(G, u, v, w):
-  G[u].append((v, w))
+  for u in range(n):
+    for v, w in G[u]:
+      cost[u][v] = w
+      path[u][v] = u
 
+  for k in range(n):
+    for i in range(n):
+      for j in range(n):
+        if i != j and j != k and i != k:
+          f = cost[i][k] + cost[k][j]
+          if f < cost[i][j]:
+            cost[i][j] = f
+            path[i][j] = path[k][j]
+
+  return path, cost

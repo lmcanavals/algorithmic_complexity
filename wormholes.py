@@ -1,14 +1,15 @@
 import graph_algorithms as ga
 
 c = int(input().strip())
+
 while c > 0:
   c -= 1
-  n, m = map(int, input().strip().split())
-  g = ga.Digraph(n)
-  while m > 0:
-    m -= 1
-    x, y, t = map(int, input().strip().split())
-    ga.addDiEdge(g, x, y, t)
 
-  p, d = ga.bellmanFord(g, 0)
-  print("possible" if p is None else "not possible")
+  n, m = map(int, input().strip().split())
+  G = [[] for _ in range(n)]
+  for _ in range(m):
+    x, y, t = map(int, input().strip().split())
+    G[x].append((y, t))
+
+  ok, _ = ga.bellmanFord(G, 0)
+  print("possible" if not ok else "not possible")
