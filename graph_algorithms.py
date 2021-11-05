@@ -70,6 +70,7 @@ def floydWarshall(G):
   cost = [[float('inf')]*n for _ in range(n)]
   path = [[-1]*n for _ in range(n)]
 
+
   for u in range(n):
     cost[u][u] = 0
     for v, w in G[u]:
@@ -81,7 +82,7 @@ def floydWarshall(G):
     for i in range(n):
       if i == k: continue
       for j in range(n):
-        if i == j or j == k: continue
+        if j == k or j == i: continue
         f = cost[i][k] + cost[k][j]
         if f < cost[i][j]:
           cost[i][j] = f
