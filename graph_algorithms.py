@@ -39,6 +39,29 @@ def dfs(G, s):
 
   return parent
 
+import heapq as hq
+
+def dijkstra(G, s):
+  n = len(G)
+  cost = [float('inf')]*n
+  cost[s] = 0
+  path = [-1]*n
+  visited = [False]*n
+
+  queue = [(0, s)]
+
+  while queue:
+    c, u = hq.heappop(queue)
+    if visited[u]: continue
+    visited[u] = True
+    for v, w in G[u]:
+      if not visited[v] and c + w < cost[v]:
+        cost[v] = c + w
+        path[v] = u
+        hq.heappush(queue, (cost[v], v))
+
+  return path, cost
+
 def bellmanFord(G, s):
   n = len(G)
 
@@ -59,7 +82,7 @@ def bellmanFord(G, s):
   for u in range(n):
     for v, w in G[u]:
       if cost[u] + w < cost[v]:
-        return None, None
+        return None, None # negative cycle exists
 
   return path, cost
 
@@ -89,3 +112,30 @@ def floydWarshall(G):
           path[i][j] = path[k][j]
 
   return path, cost
+
+def johnson(G):
+  n = len(G)
+
+  # initialize
+  G.append([(n-1, 0)])
+
+  # aplicar bellman ford
+  _, g = bellmanFord(G, n)
+
+  # create G'
+  Gprime = [[] for _ in range(n)]
+  for u in range(n):
+    for v, w in G[u]:
+      Gprime[u].append((v, w + g[u] - g[v])) # :O
+
+  # dijkstra empezando en cada vertice
+  path = []
+  for u in range(n):
+    p, _ = dijkstra(Gprime, u)
+    path.append(p)
+
+
+  # eliminar ultimo vertice
+  G.pop()
+
+  return path
