@@ -121,6 +121,10 @@ def johnson(G):
 
   # aplicar bellman ford
   _, g = bellmanFord(G, n)
+  
+  if not g: return None
+
+  # initialize
 
   # create G'
   Gprime = [[] for _ in range(n)]
