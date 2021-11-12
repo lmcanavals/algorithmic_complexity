@@ -1,0 +1,19 @@
+2
+6
+Ofi1	Ofi2	Ofi3	ofi4	ofi5	ofi6
+0	4	1	-1	4	-1
+4	0	-1	2	3	4
+1	-1	0	-1	3	-1
+-1	2	-1	0	-1	1
+4	3	3	-1	0	2
+-1	4	-1	1	2	0
+1
+emp1 Ofi1 ofi4
+3
+Murcia	Alicante	Albacete
+0	3	-1
+-1	0	4
+-1	-1	0
+2
+Dofyl Murcia Albacete
+Dofyl Albacete Murcia
